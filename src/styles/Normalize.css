@@ -1,0 +1,169 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Biryani&family=Lekton:wght@700&family=Poppins:wght@600&display=swap');
+
+/* Custom Properties */
+:root {
+    /* Tipografia */
+    --color-primario: #181818;
+    --color-secundario: #f0f0f0;
+    --tipo-principal: Helvetica, Arial, sans-serif;
+    --tipo-secundaria: Verdana;
+    --tipo-custom:'Poppins', sans-serif;
+
+
+    /* Colors design */
+
+    --color-sc-1: #E2F263;
+    --color-sc-2: #EEF280;
+    --color-sc-3: #e3e2e9;
+    --color-sc-4: #223D44;
+    --color-sc-5: #011826;
+    
+    /* backgrounds */
+    --bg-color: var(--color-sc-5);
+    --second-bg-color: var(--color-sc-4);
+    --text-color: var(--color-sc-3);
+    --main-color:var(--color-sc-1);
+
+    /* Elements */
+    --border-1: linear-gradient(
+        to right,
+        transparent 100%,
+        var(--compColor-5) 0%,
+        var(--compColor-4) 100%
+    );
+    --bx-shadow: rgba(0, 0, 0, .2);
+    --bx-border: var(--color-sc-2);
+}
+
+/* Adaptation to dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primario: #f0f0f0;
+        --color-secundario: #181818;
+    }
+}
+
+/* Optional */
+/* High contrast mode activated */
+@media (prefers-contrast: high){
+    :root {
+        --color-primario: black;
+        --color-secundario: white;
+    }
+}
+
+/* Optional */
+/* Animations mode disabled */
+
+@media (prefers-reduced-motion: reduce){
+/* The tag to which the animation is to be removed should be reported specifically and no global references should be 
+    made to avoid a drop in performance. */
+    * {
+        animation: none;
+        transition: none;
+    }
+}
+
+/* Reset margin */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+/* Avoid problems with multimedia */
+img, picture, video, iframe, figure {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    /* opcional */ object-fit: cover;
+    /* optional */ object-position: center center;
+}
+
+/* Reset links */
+a {
+    display: block;
+}
+
+/* exception in paragraphs */
+p a {
+    display: inline;
+}
+
+/* Disabled points and reference numbers in lists */
+li {
+    list-style-type: none;
+}
+
+/* Soft anchor configuration */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Disable styles in text labels */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Avoid problems with pseudo-elements of quotes*/
+blockquote::before, blockquote::after, q::before, q::after {
+    content: '';
+    content: none;
+}
+
+/* Text selection settings */
+::selection {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+/* Leveling of typography in forms */
+form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+    /* optional appearance: none;*/ 
+}
+
+/* Reset table */
+table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Avoid problems with SVG */
+
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+/* configuration for the whole web tripography */
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    /* font-family: var(--tipo-principal);
+    color: var(--color-primario); */
+    
+    /* Custom */
+    font-family: var(--tipo-custom);
+    color: var(--color-primario);
+
+    background-color: var(--tipo-secundaria);
+    /* optional line-height: 1.4em;*/ 
+    /* optional hyphens: auto;*/
+    /* optional */ -wekit-font-smoothing: antialiased;
+    /* optional */ -moz-osx-font-smoothing: grayscale; 
+}

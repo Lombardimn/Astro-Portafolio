@@ -1,0 +1,157 @@
+<script>
+	// Mostrar y ocultar navbar
+	const menuIcon = document.getElementById('menu__icon') as HTMLImageElement;
+    const navbar = document.getElementById('header__nav');
+
+    menuIcon?.addEventListener('click', () => {
+        navbar?.classList.toggle('active');
+
+        if (navbar?.classList.contains('active')){
+            menuIcon.src = '/images/x-mark.svg';
+        } else {
+            menuIcon.src ="/images/list-fill.svg";
+        }
+    });
+
+    // activacion del menu mediante el scroll
+    // const sections = document.querySelectorAll('section');
+    // const navLinks = document.querySelectorAll('header nav li');
+
+    // window.addEventListener('scroll', () => {
+    //     const scrollPosition = window.scrollY;
+
+    //     sections.forEach((section) => {
+    //     const offset = section.offsetTop - 100;
+    //     const height = section.offsetHeight;
+    //     const id = section.getAttribute('id');
+
+    //         if (scrollPosition >= offset && scrollPosition < offset + height) {
+    //             navLinks.forEach((link) => {
+    //                 link.classList.remove('active');
+    //                 if (link.getAttribute('id') === id) {
+    //                     link.classList.add('active');
+
+    //                 }
+    //             });
+    //         }
+    //     });
+    // });
+
+	const sections = document.querySelectorAll('section');
+	const navLinks = document.querySelectorAll('header nav li');
+	const svgElement = document.querySelector('.img__icon--li') as SVGElement;
+
+	window.addEventListener('scroll', () => {
+		const scrollPosition = window.scrollY;
+
+		sections.forEach((section) => {
+		const offset = section.offsetTop - 100;
+		const height = section.offsetHeight;
+		const id = section.getAttribute('id');
+
+		if (scrollPosition >= offset && scrollPosition < offset + height) {
+			navLinks.forEach((link) => {
+			link.classList.remove('active');
+				if (link.getAttribute('id') === id) {
+					link.classList.add('active');
+					applySvgColor(link.classList.contains('active'));
+				}
+			});
+		} else {
+			navLinks.forEach((link) => {
+				if (link.getAttribute('id') === id) {
+				link.classList.remove('active');
+				applySvgColor(false);
+				}
+			});
+			}
+		});
+	});
+
+	function applySvgColor(isActive: boolean) {
+		if (isActive) {
+			svgElement.style.fill = '#FF7E33'; // Cambia "red" al color deseado
+		} else {
+			svgElement.style.fill = 'initial'; // Restaura el color inicial del SVG
+		}
+	}
+
+
+        // Sticky header
+        // let header = document.querySelector('header');
+
+        // header.classList.toggle('sticky', window.scrollY > 100);
+        
+</script>
+
+
+<header class="header">
+	<h1 class="header__h1"><a href="#" class="header__a">LombardiDev.</a></h1>
+	<img src="/images/list-fill.svg" class="img__icon" id="menu__icon" alt="" />
+	<nav class="header__nav" id="header__nav">
+		<ul class="header__ul" id="header__ul">
+			<li class="header__li active" id="li-home">
+				<a href="#home" class="header__a header__a--nav">Home</a>
+				<i
+					><img
+						src="/images/house-user.svg"
+						class="img__icon--li"
+						alt=""
+					/></i
+				>
+			</li>
+			<li class="header__li" id="li-about">
+				<a href="#about" class="header__a header__a--nav">About</a>
+				<i
+					><img
+						src="/images/user-circle.svg"
+						class="img__icon--li"
+						alt=""
+					/></i
+				>
+			</li>
+			<li class="header__li" id="li-project">
+				<a href="#project" class="header__a header__a--nav">Project</a>
+				<i
+					><img
+						src="/images/folder-open.svg"
+						class="img__icon--li"
+						alt=""
+					/></i
+				>
+			</li>
+			<li class="header__li" id="li-skill">
+				<a href="#skill" class="header__a header__a--nav">Skill</a>
+				<i
+					><img
+						src="/images/medal-star.svg"
+						class="img__icon--li"
+						alt=""
+					/></i
+				>
+			</li>
+			<li class="header__li" id="li-education">
+				<a href="#education" class="header__a header__a--nav"
+					>Education</a
+				>
+				<i
+					><img
+						src="/images/book.svg" 
+						class="img__icon--li" 
+						alt="" 
+					/></i
+				>
+			</li>
+			<li class="header__li" id="li-contact">
+				<a href="#contact" class="header__a header__a--nav">Contact</a>
+				<i
+					><img
+						src="/images/mailbox.svg"
+						class="img__icon--li"
+						alt=""
+					/></i
+				>
+			</li>
+		</ul>
+	</nav>
+</header>

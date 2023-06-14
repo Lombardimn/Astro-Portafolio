@@ -1,0 +1,45 @@
+/* body::-webkit-scrollbar{
+    width: .75rem;
+    background-image: linear-gradient(to bottom, var(--bg-color), var(--second-bg-color), var(--bg-color)); 
+    /* var(--bg-color); 
+}
+
+body::-webkit-scrollbar:window-inactive{
+    display: none;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: .25rem;
+    border-right: .125rem solid var(--bg-color);
+}
+
+body::-webkit-scrollbar-track-piece{
+    border-radius: 2px;
+    background-color: var(--second-bg-color);
+    background-clip: content-box;
+    border-radius: 6px;
+    border: solid 4px transparent;
+}
+
+body::-webkit-scrollbar-track-piece:decrement{
+    background: var(--main-color);
+    background-clip: content-box;
+    border: solid 4px transparent;
+}
+
+body::-webkit-scrollbar-button:vertical:start:decrement{
+    background: transparent url(../../img/icons/chevrons-up-solid-24.png) no-repeat center center;
+    background-size: 1rem;
+}
+
+body::-webkit-scrollbar-button:vertical:end:increment{
+    background: transparent url(../../img/icons/chevrons-down-solid-24.png) no-repeat center center;
+    background-size: 1rem;
+} */
+
+.main{
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+}
