@@ -14,11 +14,11 @@
 
     /* Colors design */
 
-    --color-sc-1: #E2F263;
+    --color-sc-1: #FF7E33;
     --color-sc-2: #EEF280;
     --color-sc-3: #e3e2e9;
-    --color-sc-4: #223D44;
-    --color-sc-5: #011826;
+    --color-sc-4: #181325;
+    --color-sc-5: #130912;
     
     /* backgrounds */
     --bg-color: var(--color-sc-5);
