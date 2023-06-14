@@ -2,28 +2,28 @@
     {
         "title": "Portafolio Responsive",
         "subtitle": "Lombardi.",
-        "image": "/Astro-Portafolio/public/screenshot/porfolioResponsive.png",
+        "image": "/Astro-Portafolio/screenshot/porfolioResponsive.png",
         "description": "My first project, developed with HTML, CSS and vanilla JavaScript; in it I have applied the BEM methodology and code modulation.",
         "url": "https://lombardimn.github.io/Responsive-Personal-Porfolio/"
     },
     {
         "title": "Reproductor Web",
         "subtitle": "LoMusic.",
-        "image": "/Astro-Portafolio/public/screenshot/musicPlayer.png",
+        "image": "/Astro-Portafolio/screenshot/musicPlayer.png",
         "description": "Project developed with HTML, CSS and vanilla JavaScript; with implementation of databases and read logics.",
         "url": "https://lombardimn.github.io/Music-Player/"
     },
     {
         "title": "Portafolio Responsive",
         "subtitle": "Lombardi.",
-        "image": "/Astro-Portafolio/public/screenshot/porfolioResponsive.png",
+        "image": "/Astro-Portafolio/screenshot/porfolioResponsive.png",
         "description": "My first project, developed with HTML, CSS and vanilla JavaScript; in it I have applied the BEM methodology and code modulation.",
         "url": "https://lombardimn.github.io/Responsive-Personal-Porfolio/"
     },
     {
         "title": "Portafolio Responsive",
         "subtitle": "Lombardi.",
-        "image": "/Astro-Portafolio/public/screenshot/porfolioResponsive.png",
+        "image": "/Astro-Portafolio/screenshot/porfolioResponsive.png",
         "description": "My first project, developed with HTML, CSS and vanilla JavaScript; in it I have applied the BEM methodology and code modulation.",
         "url": "https://lombardimn.github.io/Responsive-Personal-Porfolio/"
     }
