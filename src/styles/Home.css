@@ -116,7 +116,6 @@
 .home__input--leng:checked + label .label__img-es {
     opacity: 1;
 }
-/* *** */
 
 .home__article--content{
     flex-direction: column;
@@ -162,7 +161,7 @@
     animation-delay: 2s;
 }
 
-.home__h3::before{
+/* .home__h3::before{
     content: '';
     position: absolute;
     top: 0;
@@ -173,7 +172,7 @@
     z-index: -1;
     animation: homeCursorText 8s linear infinite;
     animation-delay: 2s;
-}
+} */
 
 .home__p{
     position: relative;
@@ -271,8 +270,8 @@
 }
 
 .home__a:hover{
-    -webkit-animation: vibrate-1 1s linear 0.3s infinite alternate backwards;
-    animation: vibrate-1 1s linear 0.3s infinite alternate backwards;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 .home__i{

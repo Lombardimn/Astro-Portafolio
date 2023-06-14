@@ -1,0 +1,52 @@
+---
+import Estudies from "../../config/educations.json";
+import Experiences from "../../config/experiences.json"
+---
+
+<section class="education__section" id="education">
+    <h2 class="education__h2 global__h2">My <span class="education__span global__span">Journey</span></h2>
+    <div class="education__div--row">
+        <div class="education__div--column">
+            <h3 class="education__h3">Education</h3>
+            <div class="education__div--box">
+
+                {
+                    Estudies.map(estudy =>(
+                        <article class="education__article">
+                            <div class="education__div--content">
+                                <span class="education__span--year">
+                                    <i class="global__i">
+                                        <img src="/Astro-Portafolio/icons/calendar.svg" alt="">
+                                    </i>
+                                        {estudy.Periode}
+                                    </span>
+                                <h4 class="education__h4">{estudy.title}</h4>
+                                <p class="education__p">{estudy.description}</p>
+                            </div>
+                        </article>
+                    ))
+                }
+
+            </div>
+        </div>
+
+        <div class="education__div--column">
+            <h3 class="education__h3">Experience</h3>
+            <div class="education__div--box">
+
+                {
+                    Experiences.map(experience =>(
+                        <article class="education__article">
+                            <div class="education__div--content">
+                                <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>{experience.Periode}</span>
+                                <h4 class="education__h4">{experience.title}</h4>
+                                <p class="education__p">{experience.description}</p>
+                            </div>
+                        </article>
+                    ))
+                }
+
+            </div>
+        </div>
+    </div>
+</section>

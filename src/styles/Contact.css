@@ -1,0 +1,82 @@
+.contact__section{
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    position: relative;
+    min-height: 100vh;
+    padding: .5rem 1rem;
+}
+
+.contact__form{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact__div--fbox{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact__div--field{
+    position: relative;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.contact__input{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .375rem;
+    border: .15rem solid var(--main-color);
+    position: relative;
+    z-index: 1;
+}
+
+.contact__input::placeholder{
+    color: var(--text-color);
+    opacity: 0.5;
+    font-size: 0.8rem;
+}
+
+.contact__span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    border-radius: .375rem;
+    /* z-index: -1; */
+    transition: .5s;
+}
+
+.contact__input:focus~.contact__span,
+.contact__input:valid~.contact__span{
+    width: 100%;
+}
+
+.contact__box--txt{
+    position: relative;
+    margin: .5rem 0 1rem;
+}
+
+.contact__input--txt{
+    resize: none;
+    scroll-behavior: none;
+}
+
+.contact__article--box {
+    display: inline-block;
+}
+
+.contact__btn{
+    height: 3rem;
+    margin-bottom: 1.5rem;
+}

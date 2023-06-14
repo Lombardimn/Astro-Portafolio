@@ -1,0 +1,104 @@
+.education__section{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    padding: .5rem 1rem;
+}
+
+.education__h2{
+    margin-bottom: 2rem;
+}
+
+.education__div--row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+}
+
+.education__div--column{
+    flex: 1 1 25rem;
+}
+
+.education__h3{
+    position: relative;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 0 0 1rem 1.25rem;
+}
+
+.education__div--box{
+    position: relative;
+    border-left: .15rem solid var(--main-color);
+}
+
+.education__article{
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.education__article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -.68rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.education__div--content{
+    position: relative;
+    padding: 1rem;
+    border: .15rem solid var(--main-color);
+    border-radius: .375rem;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.education__div--content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.education__div--content:hover::before{
+    width: 100%;
+}
+
+.education__span--year{
+    color: var(--main-color);
+    font-size: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.global__i{
+    padding-right: .3125rem;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    display: inline-flex;
+}
+
+.education__h4{
+    font-size: 1.25rem;
+}
+
+.education__p{
+    font-size: .875rem;
+    padding-top: .3125rem;
+}

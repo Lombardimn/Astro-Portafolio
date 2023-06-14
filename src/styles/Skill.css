@@ -1,0 +1,10 @@
+.skill__section{
+    margin: auto;
+    }
+    
+    .skill__h2{
+        font-size: 5rem;
+        color: yellow;
+        font-weight: 700;
+        -webkit-text-stroke: .7px black;
+    }
