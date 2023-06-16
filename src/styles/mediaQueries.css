@@ -1,0 +1,145 @@
+@media (min-width: 769px) {
+    
+/* configuration Navbar */
+
+    .header{
+        padding: 0.5rem 2rem;
+    }
+
+    .img__icon{
+        display: none;
+    }
+
+    .header__h1{
+        position: relative;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .header__nav{
+        top: 0;
+        left: 0;
+        position: relative;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .header__ul{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .header__li{
+        margin: .5rem .5rem .5rem 0;
+    }
+
+    #li-education{
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .img__icon--li{
+        padding-left: .1rem;
+        font-size: 1rem;
+    }
+    
+    .header__a--nav{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    section{
+        min-height: 100vh;
+    }
+
+/* configuration Home */
+
+    .home__section{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home__article{
+        padding: 0 2rem;
+    }
+
+    .home__article--leng{
+        margin-top: -2rem;
+        margin-bottom: 3rem;
+    }
+
+    .home__leng-h6{
+        font-size: .8rem;
+    }
+
+    .home__h2{
+        font-size: 3.5rem;
+        margin: 2rem 0;
+    }
+
+    .home__h3{
+        font-size: 2rem;
+    }
+
+    .home__h3::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: .125px solid var(--main-color);
+        z-index: -1;
+        animation: homeCursorText 8s linear infinite;
+        animation-delay: 2s;
+    }
+
+    .home__p{
+        margin: 2rem 0;
+        font-size: 1.2rem;
+    }
+
+    .global__btn--box {
+        flex-direction: row;
+        justify-content: flex-start;
+        display: flex;
+
+    }
+
+    .btn__box{
+        margin-bottom: 7rem;
+    }
+
+    #home__dcv{
+        margin-right: 1rem;
+    }
+
+    .home__article--rrss{
+        display: flex;
+        justify-content: center;
+    }
+
+    .home__a{
+        margin: 1rem 3rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+/* configuration About */
+
+    .about__section{
+        padding: 0.5rem 2rem;
+    }
+
+    .about__p,
+    .about__pp2,
+    .about__p2{
+        font-size: 1.2rem;
+    }
+
+    .global__h2{
+        margin-top: 4rem;
+    }
+}

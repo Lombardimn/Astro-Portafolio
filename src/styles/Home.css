@@ -42,6 +42,7 @@
     font-size: 12px;
     font-family: 'Biryani', sans-serif;
     font-style: italic;
+    padding-right: 0.25rem;
 }
 
 .home__label--lbl{
@@ -161,19 +162,6 @@
     animation-delay: 2s;
 }
 
-/* .home__h3::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-right: .125px solid var(--main-color);
-    z-index: -1;
-    animation: homeCursorText 8s linear infinite;
-    animation-delay: 2s;
-} */
-
 .home__p{
     position: relative;
     font-size: 1rem;
@@ -245,6 +233,10 @@
 .global__btn:hover:before{
     content: '';
     width: 100%;
+}
+
+#home__lt{
+    display: none;
 }
 
 .home__article--rrss{

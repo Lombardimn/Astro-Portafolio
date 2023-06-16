@@ -1,10 +1,36 @@
 ---
 import feactures from "../../config/feactures.json";
 ---
+<script>
+
+    const moreBtn = document.querySelector('.about__btn') as HTMLButtonElement;
+    let flagBtn = false;
+
+    moreBtn?.addEventListener('click', async ()=> {
+        const paragraph = document.querySelector('.about__p2') as HTMLElement;
+        const paragraph1 = document.querySelector('.about__p2') as HTMLElement;
+        const paragraph2 = document.querySelector('.about__p2') as HTMLElement;
+        flagBtn = !flagBtn;
+
+        if (flagBtn){
+            paragraph.style.display = 'block';
+            paragraph1.style.display = 'block'; 
+            paragraph2.style.display = 'block';
+            moreBtn.textContent = 'Ver -';
+        } else{
+            paragraph.style.display = 'none';
+            paragraph1.style.display = 'none'; 
+            paragraph2.style.display = 'none';
+            moreBtn.textContent = 'Ver +';
+        }
+    });
+
+</script>
+
 
 <section class="about__section" id="about">
     <article class="about__article">
-        <h2 class="about__h2 global__h2">About <span class="about__span global__span">Me!</span></h2>
+        <h2 class="about__h2 global__h2">Sobre <span class="about__span global__span">Mí!</span></h2>
         <div class="about__div">
             <img src="/Astro-Portafolio/images/profile-2.webp" alt="Segunda foto de perfil." class="about__img">
             <span class="about__span--cir"></span>
@@ -13,14 +39,20 @@ import feactures from "../../config/feactures.json";
 
     {
         feactures.map(feacture =>(
-        <article class="about__article">
-            <h3 class="about__h3">{feacture.title}</h3>
-            <p class="about__p">{feacture.description}</p>
-        </article>
+            
+            <article class="about__article">
+                <h3 class="about__h3">{feacture.title}</h3> 
+                <p class="about__p">{feacture.description}</p>
+                {feacture.descComp !== "" ? <p class="about__pp2">{feacture.descComp}</p> : null}
+                {feacture.descComp2 !== "" ? <p class="about__p2" id="about__pc1">{feacture.descComp2}</p> : null}
+                {feacture.descComp3 !== "" ? <p class="about__p2" id="about__pc2">{feacture.descComp3}</p> : null}
+                {feacture.descComp4 !== "" ? <p class="about__p2" id="about__pc3">{feacture.descComp4}</p> : null}
+            </article>
+
         ))
     }
 
     <article class="about__article global__btn--box">
-        <button class="about__btn global__btn">Read More</button>
+        <button class="about__btn global__btn">Ver +</button>
     </article>
 </section>

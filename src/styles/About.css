@@ -62,11 +62,20 @@
     font-size: 1.6rem;
 }
 
-.about__p{
+.about__p,
+.about__pp2,
+.about__p2{
     position: relative;
+    text-align: left;
     font-size: .875rem;
     margin: 1rem 0 1rem;
+    max-width: 80%;
 }
+
+.about__p2{
+    display: none;
+}
+
 
 .about__btn{
     min-height: 3rem;

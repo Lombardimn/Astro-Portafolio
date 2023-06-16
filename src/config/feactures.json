@@ -1,10 +1,18 @@
 [
     {
-        "title":"My role as Functional Analyst",
-        "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam sed libero magnam recusandae autem quis, dicta fuga, ipsum dignissimos mollitia similique ipsa tempora debitis, dolores rerum. Ipsa perspiciatis ipsum, cumque, totam eos maiores iste, reprehenderit similique iusto dolores amet maxime? Quisquam reprehenderit est repellendus sapiente necessitatibus quod, blanditiis temporibus."
+        "title":"Mi objetivo",
+        "description":"Busco brindar soluciones tecnológicas eficientes, destacando en la comunicación efectiva y la resolución de problemas complejos. Valorando el trabajo en equipo, busco contribuir al crecimiento de las organizaciones en un entorno tecnológico en constante evolución.",
+        "descComp": "",
+        "descComp2": "",
+        "descComp3": "",
+        "descComp4": ""
     },
     {
-        "title":"My role as Frontend Developer",
-        "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam sed libero magnam recusandae autem quis, dicta fuga, ipsum dignissimos mollitia similique ipsa tempora debitis, dolores rerum. Ipsa perspiciatis ipsum, cumque, totam eos maiores iste, reprehenderit similique iusto dolores amet maxime? Quisquam reprehenderit est repellendus sapiente necessitatibus quod, blanditiis temporibus."  
+        "title":"¿Fuera del ambito laboral, quíen soy?",
+        "description": "Residente de la hermosa ciudad de Córdoba, Argentina. Como padre de dos maravillosos niños, mi familia es mi mayor inspiración y mi motor para crecer cada día. Además de ser un apasionado analista de sistemas en mi trabajo, tengo una faceta muy activa en mi vida.",
+        "descComp": "Me encanta sumergirme en actividades deportivas, especialmente en simulaciones militares, donde puedo poner a prueba mi estrategia y habilidades tácticas. En mis momentos de relax, me sumerjo en el fascinante mundo de los mangas y disfruto de momentos de calidad con mi familia y amigos.",
+        "descComp2": "También me encanta salir a comer y descubrir nuevos sabores y experiencias culinarias.Viajar es otra de mis grandes pasiones. Me encanta explorar cada rincón de Argentina y disfrutar de sus paisajes impresionantes. Los fines de semana, aprovecho la diversidad de paisajes que ofrece Córdoba para desconectar y relajarme junto a mi familia. ",
+        "descComp3": "Mi día a día está lleno de programación y desarrollo de soluciones tecnológicas. Me encanta sumergirme en nuevos proyectos y encontrar soluciones innovadoras para los desafíos que se presentan y no puedo olvidar mencionar que siempre estoy acompañado de mi inseparable mate o un buen café, que me inspiran y me mantienen enfocado en cada tarea que emprendo.",
+        "descComp4": ""
     }
 ]
