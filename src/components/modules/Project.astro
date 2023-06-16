@@ -7,10 +7,10 @@ import projects from "../../config/project.json";
         <h2 class="project__h2 global__h2">Mis <span class="project__span global__span">Proyectos</span></h2>
     </article>
 
-    {
-        projects.map(project =>(
-            <article class="project__article">
-                <div class="project__container">
+    <article class="project__article project_views">
+        {
+            projects.map(project =>(
+                <div class="project__container">    
                     <div class="project__card">
                         <div class="project__card--front global__face">
                             <div class="project__info project__info--front">
@@ -27,15 +27,21 @@ import projects from "../../config/project.json";
                         </div>
                         <div class="project__card--back global__face">
                             <div class="project__info project__info--back">
-                                <h4 class="project__h4">{project.subtitle}</h4>
+                                <!-- <h4 class="project__h4">{project.subtitle}</h4> -->
                                 <p class="project__p">{project.description}</p>
-                                <a class="project__btn global__btn" target="_blank" href={project.url}>See more</a>
+                                <div class="project__content--svg">
+                                    {project.skill0 !== "" ? <img src={project.skill0}  alt="" class="project__svg"> : null}
+                                    {project.skill1 !== "" ? <img src={project.skill1}  alt="" class="project__svg"> : null}
+                                    {project.skill2 !== "" ? <img src={project.skill2}  alt="" class="project__svg"> : null}
+                                    {project.skill3 !== "" ? <img src={project.skill3}  alt="" class="project__svg"> : null}
+                                </div>
+                                <a class="project__btn global__btn" target="_blank" href={project.url}>Ver +</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </article>
-        ))
-    }
+            ))
+        }
+    </article>
 
 </section>

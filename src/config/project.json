@@ -1,30 +1,46 @@
 [
     {
-        "title": "Portafolio Responsive",
+        "title": "Portafolio Web",
         "subtitle": "Lombardi.",
         "image": "/Astro-Portafolio/screenshot/porfolioResponsive.png",
-        "description": "My first project, developed with HTML, CSS and vanilla JavaScript; in it I have applied the BEM methodology and code modulation.",
-        "url": "https://lombardimn.github.io/Responsive-Personal-Porfolio/"
+        "description": "Mi primer proyecto, desarrollado con HTML, CSS y JavaScript puro; en él he aplicado la metodología BEM y la modularización del código. ",
+        "url": "https://lombardimn.github.io/Responsive-Personal-Porfolio/",
+        "skill0": "/Astro-Portafolio/icons/svg/html.svg",
+        "skill1": "/Astro-Portafolio/icons/svg/css.svg",
+        "skill2": "/Astro-Portafolio/icons/svg/javascript.svg",
+        "skill3": "/Astro-Portafolio/icons/svg/nodejs-dark.svg"
     },
     {
         "title": "Reproductor Web",
         "subtitle": "LoMusic.",
         "image": "/Astro-Portafolio/screenshot/musicPlayer.png",
-        "description": "Project developed with HTML, CSS and vanilla JavaScript; with implementation of databases and read logics.",
-        "url": "https://lombardimn.github.io/Music-Player/"
+        "description": "Creé un reproductor web con API de Spotify, buscador, login, guardado de favoritos y compartir enlaces. Aprendí interacciones con bases de datos para gestionar usuarios.",
+        "url": "https://lombardimn.github.io/Music-Player/",
+        "skill0": "/Astro-Portafolio/icons/svg/html.svg",
+        "skill1": "/Astro-Portafolio/icons/svg/css.svg",
+        "skill2": "/Astro-Portafolio/icons/svg/javascript.svg",
+        "skill3": ""
+    },
+    {
+        "title": "Portafolio Responsive",
+        "subtitle": "Lombardi.",
+        "image": "/Astro-Portafolio/screenshot/porfolioResponsive.png",
+        "description": "Porfolio completamente Responsive, con enrutado estatico y estructura professional. Aplicado sobre el framework todo en uno Astro",
+        "url": "https://lombardimn.github.io/Astro-Portafolio/",
+        "skill0": "/Astro-Portafolio/icons/svg/astro.svg",
+        "skill1": "/Astro-Portafolio/icons/svg/css.svg",
+        "skill2": "/Astro-Portafolio/icons/svg/typescript.svg",
+        "skill3": ""
     },
     {
         "title": "Portafolio Responsive",
         "subtitle": "Lombardi.",
         "image": "/Astro-Portafolio/screenshot/porfolioResponsive.png",
         "description": "My first project, developed with HTML, CSS and vanilla JavaScript; in it I have applied the BEM methodology and code modulation.",
-        "url": "https://lombardimn.github.io/Responsive-Personal-Porfolio/"
-    },
-    {
-        "title": "Portafolio Responsive",
-        "subtitle": "Lombardi.",
-        "image": "/Astro-Portafolio/screenshot/porfolioResponsive.png",
-        "description": "My first project, developed with HTML, CSS and vanilla JavaScript; in it I have applied the BEM methodology and code modulation.",
-        "url": "https://lombardimn.github.io/Responsive-Personal-Porfolio/"
+        "url": "",
+        "skill0": "",
+        "skill1": "",
+        "skill2": "",
+        "skill3": ""
     }
 ]

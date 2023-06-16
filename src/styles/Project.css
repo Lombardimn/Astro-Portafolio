@@ -22,6 +22,10 @@
     align-items: center;
 }
 
+.project_views{
+    margin-top: 4rem;
+}
+
 .project__container{
     margin: 1.25rem;
     perspective: 62.5rem;
@@ -82,7 +86,7 @@
 
 .project__h3{
     position: absolute;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     z-index: 100;
     color: var(--text-color);
     display: flex;
@@ -115,7 +119,6 @@
 
 .path__div--f4{
     position: absolute;
-    /* background-color: #999918; */
     background-color: #7846EC;
     clip-path: circle(80% at 50% 50%);
     border-radius: 0 0 .625rem .625rem;
@@ -124,7 +127,6 @@
 
 .path__div--f5{
     position: absolute;
-    /* background-color: #6D8012; */
     background-color: #872DE6;
     opacity: 0.1;
     clip-path: circle(100% at 50% 50%);
@@ -148,7 +150,6 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    text-shadow: .0625rem .0625rem var(--bx-shadow);
 }
 
 .project__clipPath::before{
@@ -177,6 +178,23 @@
     margin: 0.5rem;
 }
 .project__p{
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     text-align: center;
+    margin: 0.5rem;
+}
+
+.project__content--svg{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.project__svg{
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+.project__btn{
+    height: 2rem;
 }

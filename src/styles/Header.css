@@ -15,7 +15,7 @@
 }
 
 .header.sticky {
-    background: var(--bg-color);
+    background-color: var(--bg-color);
 }
 
 .header__h1{

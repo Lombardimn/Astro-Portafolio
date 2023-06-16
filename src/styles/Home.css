@@ -204,10 +204,12 @@
     color: var(--main-color);
 }
 
-.global__btn:nth-child(2){
+/* Se retiro el boton secundario por lo que solo afecta a las tarjetas, como redireccionan no es necesario mostrar efectos.
+
+/* .global__btn:nth-child(2){
     background-color: transparent;
     color: var(--main-color);
-}
+} */
 
 .global__btn:nth-child(2):hover{
     color: var(--bg-color);

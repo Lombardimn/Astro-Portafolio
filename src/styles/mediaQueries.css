@@ -142,4 +142,62 @@
     .global__h2{
         margin-top: 4rem;
     }
+
+    .project__section{
+        padding: 0.5rem 2rem;
+    }
+
+    .project__card {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .project__p {
+        font-size: 1.1rem;
+    }
+
+    .project__svg {
+        height: 4rem;
+        width: 4rem;
+        margin: 1rem;
+    }
+
+    .project__btn{
+        height: 3rem;
+    }
+
+
+
+
+/* Animaciones */
+
+    @keyframes homeBgText {
+        0%,
+        10%,
+        100% {
+            background-position: -44.94625rem 0;
+        }
+        65%,
+        85% {
+            background-position: 0 0;
+        }
+    }
+    
+    @keyframes homeCursorText {
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+        65%,
+        78%,
+        85% {
+            width: 44.94625rem;
+            opacity: 1;
+        }
+        75%,
+        81% {
+            opacity: 0;
+        }
+    }
 }
