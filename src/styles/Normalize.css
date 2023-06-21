@@ -21,7 +21,7 @@
     --color-sc-5: #1A1E26; */
 
     --color-sc-1: #50ADA3;
-    --color-sc-2: #50ADA3;
+    --color-sc-2: #73FAEC;
     --color-sc-3: #E6F4DC;
     --color-sc-4: #324359;
     --color-sc-5: #1A1E26;
@@ -33,12 +33,7 @@
     --main-color:var(--color-sc-1);
 
     /* Elements */
-    --border-1: linear-gradient(
-        to right,
-        transparent 100%,
-        var(--compColor-5) 0%,
-        var(--compColor-4) 100%
-    );
+    --border-1: var(--color-sc-2);
     --bx-shadow: rgba(0, 0, 0, .2);
     --bx-border: var(--color-sc-2);
 }

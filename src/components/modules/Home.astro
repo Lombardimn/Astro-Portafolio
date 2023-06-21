@@ -4,12 +4,12 @@ import dataHome from '../../config/dataHome.json'
 
 <section class="home__section active" id="home">
     <article class="home__article home__article--leng">
-        <h6 class="home__leng-h6">Idiomas</h6>
+        <p class="home__leng-h6">Idiomas</p>
         <div class="home__div home__div--leng">
             <input type="checkbox" class="home__input home__input--leng" id="home__label">
             <label for="home__label" class="home__label--lbl">
-                <img src="/Astro-Portafolio/icons/us.webp" class="label__img label__img-us"></img>
-                <img src="/Astro-Portafolio/icons/es.webp" class="label__img label__img-es"></img>
+                <img src="/Astro-Portafolio/icons/us.webp" class="label__img label__img-us" alt="Bandera de Estados Unidos, para el idioma ingles." loading="lazy"></img>
+                <img src="/Astro-Portafolio/icons/es.webp" class="label__img label__img-es" alt="Bandera de Estados Unidos, para el idioma ingles." loading="lazy"></img>
             </label>
         </div>
     </article>
@@ -25,7 +25,7 @@ import dataHome from '../../config/dataHome.json'
                 <p class="home__p">{data.description}<br>{data.subdescription}</p>
             </div>
             <div class="home__div home__div--img">
-                <img src={data['image-url']} alt="Primera foto de perfil." class="home__img home__img--user">
+                <img src={data['image-url']} alt="Primera foto de perfil." class="home__img home__img--user" loading="lazy">
             </div>
         </article>
         ))
@@ -37,8 +37,8 @@ import dataHome from '../../config/dataHome.json'
     </article>
 
     <article class="home__article home__article--rrss">
-            <a href="https://github.com/Lombardimn" class="home__a" target="_blank"><img src="/Astro-Portafolio/icons/github-loop.svg" alt="" class="home__i"></a>
-            <a href="mailto:example.test@example.com" class="home__a" target="_blank"><img src="/Astro-Portafolio/icons/gmail.svg" alt="" class="home__i"></a>
-            <a href="https://linkedin.com/in/mnlombardi" class="home__a" target="_blank"><img src="/Astro-Portafolio/icons/linkedin.svg" alt="" class="home__i"></a>
+            <a href="https://github.com/Lombardimn" class="home__a" id="a_gt" aria-label="Si desea puede ingresar a mi repositorio en Git-Hub." target="_blank"><img src="/Astro-Portafolio/icons/github-loop.svg" alt="" loading="lazy" class="home__i"></a>
+            <a href="mailto:example.test@example.com" class="home__a a__mail" id="a_mail" aria-label="Si desea puede contactarme mediante mi correo electronico." target="_blank"><img src="/Astro-Portafolio/icons/gmail.svg" alt="" loading="lazy" class="home__i"></a>
+            <a href="https://linkedin.com/in/mnlombardi" class="home__a a__in" id="a_in" aria-label="Si desea puede ingresar a mi perfil en Linkedin." target="_blank"><img src="/Astro-Portafolio/icons/linkedin.svg" alt="" loading="lazy" class="home__i"></a>
     </article>
 </section>

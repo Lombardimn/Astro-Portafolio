@@ -13,7 +13,7 @@
     {
         "title": "Reproductor Web",
         "subtitle": "LoMusic.",
-        "image": "/Astro-Portafolio/screenshot/musicPlayer.png",
+        "image": "/Astro-Portafolio/screenshot/musicPlayer.webp",
         "description": "Creé un reproductor web con API de Spotify, buscador, login, guardado de favoritos y compartir enlaces. Aprendí interacciones con bases de datos para gestionar usuarios.",
         "url": "https://lombardimn.github.io/Music-Player/",
         "skill0": "/Astro-Portafolio/icons/svg/html.svg",
@@ -37,7 +37,7 @@
         "subtitle": "Lombardi.",
         "image": "/Astro-Portafolio/screenshot/porfolioResponsive.png",
         "description": "My first project, developed with HTML, CSS and vanilla JavaScript; in it I have applied the BEM methodology and code modulation.",
-        "url": "",
+        "url": "https://github.com/Lombardimn/",
         "skill0": "",
         "skill1": "",
         "skill2": "",

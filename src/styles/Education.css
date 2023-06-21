@@ -78,7 +78,7 @@
 }
 
 .education__span--year{
-    color: var(--main-color);
+    color: var(--border-1);
     font-size: 1rem;
     position: relative;
     display: flex;

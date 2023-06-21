@@ -14,7 +14,7 @@ import projects from "../../config/project.json";
                     <div class="project__card">
                         <div class="project__card--front global__face">
                             <div class="project__info project__info--front">
-                                <img src={project.image} alt="" class="project__img">
+                                <img src={project.image} alt="" loading="lazy" class="project__img">
                                 <div class="project__clipPath">
                                     <h3 class="project__h3">{project.title}</h3>
                                     <div class="path__div--f1 path__div"></div>
@@ -30,10 +30,10 @@ import projects from "../../config/project.json";
                                 <!-- <h4 class="project__h4">{project.subtitle}</h4> -->
                                 <p class="project__p">{project.description}</p>
                                 <div class="project__content--svg">
-                                    {project.skill0 !== "" ? <img src={project.skill0}  alt="" class="project__svg"> : null}
-                                    {project.skill1 !== "" ? <img src={project.skill1}  alt="" class="project__svg"> : null}
-                                    {project.skill2 !== "" ? <img src={project.skill2}  alt="" class="project__svg"> : null}
-                                    {project.skill3 !== "" ? <img src={project.skill3}  alt="" class="project__svg"> : null}
+                                    {project.skill0 !== "" ? <img src={project.skill0}  alt="" loading="lazy" class="project__svg"> : null}
+                                    {project.skill1 !== "" ? <img src={project.skill1}  alt="" loading="lazy" class="project__svg"> : null}
+                                    {project.skill2 !== "" ? <img src={project.skill2}  alt="" loading="lazy" class="project__svg"> : null}
+                                    {project.skill3 !== "" ? <img src={project.skill3}  alt="" loading="lazy" class="project__svg"> : null}
                                 </div>
                                 <a class="project__btn global__btn" target="_blank" href={project.url}>Ver +</a>
                             </div>
