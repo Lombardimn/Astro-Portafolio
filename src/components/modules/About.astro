@@ -5,22 +5,28 @@ import feactures from "../../config/feactures.json";
 
     const moreBtn = document.querySelector('.about__btn') as HTMLButtonElement;
     let flagBtn = false;
+    const paragraphs: HTMLElement[] = [];
 
-    moreBtn?.addEventListener('click', async ()=> {
-        const paragraph = document.querySelector('.about__p2') as HTMLElement;
-        const paragraph1 = document.querySelector('.about__p2') as HTMLElement;
-        const paragraph2 = document.querySelector('.about__p2') as HTMLElement;
+    moreBtn?.addEventListener('click', ()=> {
+        const elements = document.querySelectorAll('.about__p2') as NodeListOf<HTMLElement>;      
         flagBtn = !flagBtn;
 
+        elements.forEach((element) => {
+            const value = element.textContent?.trim() || '';
+            if (value !== '') {
+                paragraphs.push(element);
+            }
+        });
+
         if (flagBtn){
-            paragraph.style.display = 'block';
-            paragraph1.style.display = 'block'; 
-            paragraph2.style.display = 'block';
+            paragraphs.forEach((paragraph) => {
+                paragraph.style.display = 'block';
+            });
             moreBtn.textContent = 'Ver -';
         } else{
-            paragraph.style.display = 'none';
-            paragraph1.style.display = 'none'; 
-            paragraph2.style.display = 'none';
+            paragraphs.forEach((paragraph) => {
+                paragraph.style.display = 'none';
+            });
             moreBtn.textContent = 'Ver +';
         }
     });

@@ -2,7 +2,7 @@
     {
         "title": "Portafolio Web",
         "subtitle": "Lombardi.",
-        "image": "/Astro-Portafolio/screenshot/porfolioResponsive.png",
+        "image": "/Astro-Portafolio/screenshot/porfolioResponsive.webp",
         "description": "Mi primer proyecto, desarrollado con HTML, CSS y JavaScript puro; en él he aplicado la metodología BEM y la modularización del código. ",
         "url": "https://lombardimn.github.io/Responsive-Personal-Porfolio/",
         "skill0": "/Astro-Portafolio/icons/svg/html.svg",
@@ -24,7 +24,7 @@
     {
         "title": "Portafolio Responsive",
         "subtitle": "Lombardi.",
-        "image": "/Astro-Portafolio/screenshot/porfolioResponsive.png",
+        "image": "/Astro-Portafolio/screenshot/porfolioResponsive.webp",
         "description": "Porfolio completamente Responsive, con enrutado estatico y estructura professional. Aplicado sobre el framework todo en uno Astro",
         "url": "https://lombardimn.github.io/Astro-Portafolio/",
         "skill0": "/Astro-Portafolio/icons/svg/astro.svg",
@@ -33,9 +33,9 @@
         "skill3": ""
     },
     {
-        "title": "Portafolio Responsive",
+        "title": "ToDo EnUno",
         "subtitle": "Lombardi.",
-        "image": "/Astro-Portafolio/screenshot/porfolioResponsive.png",
+        "image": "/Astro-Portafolio/screenshot/porfolioResponsive.webp",
         "description": "My first project, developed with HTML, CSS and vanilla JavaScript; in it I have applied the BEM methodology and code modulation.",
         "url": "https://github.com/Lombardimn/",
         "skill0": "",
