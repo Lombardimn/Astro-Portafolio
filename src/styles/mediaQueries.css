@@ -201,3 +201,97 @@
         }
     }
 }
+
+
+@media (min-width: 1024px){
+
+/* configuration Home */
+
+    .home__section{
+        padding-top: 4rem;
+    }
+
+    .home__article--leng {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .home__article--content {
+        flex-direction: row;
+    }
+
+    .home__div--txt{
+        width: 50%;
+    }
+
+    .home__h2 {
+        margin: 1rem 0;
+    }
+
+    .home__div--h3{
+        width: 41rem;
+    }
+
+    .home__h3 {
+        font-size: 1.82rem;
+        width: 41rem;
+    }
+
+    .home__p{
+        width: 50rem;
+        margin: 1rem 0;
+    }
+
+    .home__div--img{
+        display: block;
+        height: 22rem;
+        width: 22rem;
+    }
+
+    .btn__box {
+        margin-bottom: 1rem;
+    }
+
+/* configuration Educacion */
+
+    .education__div--row {
+        gap: 2.5rem;
+    }
+
+    .education__div--column {
+        flex: 1 1 31rem;
+    }
+
+
+    /* Animaciones */
+
+    @keyframes homeBgText {
+        0%,
+        10%,
+        100% {
+            background-position: -41rem 0;
+        }
+        65%,
+        85% {
+            background-position: 0 0;
+        }
+    }
+    
+    @keyframes homeCursorText {
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+        65%,
+        78%,
+        85% {
+            width: 41rem;
+            opacity: 1;
+        }
+        75%,
+        81% {
+            opacity: 0;
+        }
+    }
+}
