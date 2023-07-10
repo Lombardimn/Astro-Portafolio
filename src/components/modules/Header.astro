@@ -1,7 +1,10 @@
 <script>
 	// Mostrar y ocultar navbar
-	const menuIcon = document.getElementById('menu__icon') as HTMLImageElement;
-    const navbar = document.getElementById('header__nav');
+const menuIcon = document.getElementById('menu__icon') as HTMLImageElement;
+const navbar = document.getElementById('header__nav');
+const sections = document.querySelectorAll('section');
+const navlink = document.querySelectorAll('header nav li');
+const navImg = document.querySelectorAll('header nav ul li i img');
 
     menuIcon?.addEventListener('click', () => {
         navbar?.classList.toggle('active');
@@ -21,9 +24,30 @@ window.onscroll = () => {
 		//Sticky header
 		const header = document.querySelector('header') as HTMLElement;
 		header.classList.toggle('sticky', window.scrollY > 100);
+
+
+		sections.forEach(sec =>{
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 100;
+        let heigth = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + heigth){
+            // Active navbar link
+            navlink.forEach(links =>{
+                links.classList.remove('active');
+                document.querySelector('header nav li[id*= li-'+ id + ']')?.classList.add('active');
+            });
+
+			navImg.forEach(imgs =>{
+				imgs.classList.remove('active');
+				document.querySelector('header nav ul li i img[id*= img-'+ id + ']')?.classList.add('active');
+			});
+        };
+    });
+
 }
 </script>
-
 
 <header class="header">
 	<h1 class="header__h1"><a href="#" class="header__a">LombardiDev.</a></h1>
@@ -32,33 +56,36 @@ window.onscroll = () => {
 		<ul class="header__ul" id="header__ul">
 			<li class="header__li active" id="li-home">
 				<a href="#home" class="header__a header__a--nav">Inicio</a>
-				<i
-					><img
+				<i>
+					<img
+						id="img-home"
 						src="/Astro-Portafolio/icons/house-user.svg"
-						class="img__icon--li"
+						class="img__icon--li active"
 						alt=""
-					/></i
-				>
+					/>
+				</i>
 			</li>
 			<li class="header__li" id="li-about">
 				<a href="#about" class="header__a header__a--nav">Sobre Mí</a>
-				<i
-					><img
+				<i>
+					<img
+						id="img-about"
 						src="/Astro-Portafolio/icons/user-circle.svg"
 						class="img__icon--li"
 						alt=""
-					/></i
-				>
+					/>
+				</i>
 			</li>
 			<li class="header__li" id="li-project">
 				<a href="#project" class="header__a header__a--nav">Proyectos</a>
-				<i
-					><img
+				<i>
+					<img
+						id="img-project"
 						src="/Astro-Portafolio/icons/folder-open.svg"
 						class="img__icon--li"
 						alt=""
-					/></i
-				>
+					/>
+				</i>
 			</li>
 			<!-- <li class="header__li" id="li-skill">
 				<a href="#skill" class="header__a header__a--nav">Conocimientos</a>
@@ -74,13 +101,14 @@ window.onscroll = () => {
 				<a href="#education" class="header__a header__a--nav"
 					>Educación</a
 				>
-				<i
-					><img
+				<i>
+					<img
+						id="img-education"
 						src="/Astro-Portafolio/icons/book.svg" 
 						class="img__icon--li" 
 						alt="" 
-					/></i
-				>
+					/>
+				</i>
 			<!-- </li>
 			<li class="header__li" id="li-contact">
 				<a href="#contact" class="header__a header__a--nav">Contacto</a>

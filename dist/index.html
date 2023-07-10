@@ -9,12 +9,11 @@
             Site: Desarrollo Web,">
 
         <title>Astro Porfolio</title>
-    <link rel="stylesheet" href="/Astro-Portafolio/_astro/index.00145c93.css" /><script type="module">const t=document.getElementById("menu__icon"),l=document.getElementById("header__nav");t?.addEventListener("click",()=>{l?.classList.toggle("active"),l?.classList.contains("active")?t.src="/Astro-Portafolio/icons/x-mark.svg":t.src="/Astro-Portafolio/icons/list-fill.svg"});window.onscroll=()=>{document.querySelector("header").classList.toggle("sticky",window.scrollY>100)};const o=document.querySelector(".about__btn");let n=!1;const s=[];o?.addEventListener("click",()=>{const c=document.querySelectorAll(".about__p2");n=!n,c.forEach(e=>{(e.textContent?.trim()||"")!==""&&s.push(e)}),n?(s.forEach(e=>{e.style.display="block"}),o.textContent="Ver -"):(s.forEach(e=>{e.style.display="none"}),o.textContent="Ver +")});
+    <link rel="stylesheet" href="/Astro-Portafolio/_astro/index.d2c67401.css" /><script type="module">const l=document.getElementById("menu__icon"),d=document.getElementById("header__nav"),m=document.querySelectorAll("section"),v=document.querySelectorAll("header nav li"),f=document.querySelectorAll("header nav ul li i img");l?.addEventListener("click",()=>{d?.classList.toggle("active"),d?.classList.contains("active")?l.src="/Astro-Portafolio/icons/x-mark.svg":l.src="/Astro-Portafolio/icons/list-fill.svg"});window.onscroll=()=>{document.querySelector("header").classList.toggle("sticky",window.scrollY>100),m.forEach(e=>{let t=window.scrollY,a=e.offsetTop-100,u=e.offsetHeight,r=e.getAttribute("id");t>=a&&t<a+u&&(v.forEach(o=>{o.classList.remove("active"),document.querySelector("header nav li[id*= li-"+r+"]")?.classList.add("active")}),f.forEach(o=>{o.classList.remove("active"),document.querySelector("header nav ul li i img[id*= img-"+r+"]")?.classList.add("active")}))})};const c=document.querySelector(".about__btn");let s=!1;const n=[];c?.addEventListener("click",()=>{const i=document.querySelectorAll(".about__p2");s=!s,i.forEach(e=>{(e.textContent?.trim()||"")!==""&&n.push(e)}),s?(n.forEach(e=>{e.style.display="block"}),c.textContent="Ver -"):(n.forEach(e=>{e.style.display="none"}),c.textContent="Ver +")});
 </script></head>
     <body>
         <main>
             
-
 
 <header class="header">
 	<h1 class="header__h1"><a href="#" class="header__a">LombardiDev.</a></h1>
@@ -23,15 +22,21 @@
 		<ul class="header__ul" id="header__ul">
 			<li class="header__li active" id="li-home">
 				<a href="#home" class="header__a header__a--nav">Inicio</a>
-				<i><img src="/Astro-Portafolio/icons/house-user.svg" class="img__icon--li" alt=""></i>
+				<i>
+					<img id="img-home" src="/Astro-Portafolio/icons/house-user.svg" class="img__icon--li active" alt="">
+				</i>
 			</li>
 			<li class="header__li" id="li-about">
 				<a href="#about" class="header__a header__a--nav">Sobre Mí</a>
-				<i><img src="/Astro-Portafolio/icons/user-circle.svg" class="img__icon--li" alt=""></i>
+				<i>
+					<img id="img-about" src="/Astro-Portafolio/icons/user-circle.svg" class="img__icon--li" alt="">
+				</i>
 			</li>
 			<li class="header__li" id="li-project">
 				<a href="#project" class="header__a header__a--nav">Proyectos</a>
-				<i><img src="/Astro-Portafolio/icons/folder-open.svg" class="img__icon--li" alt=""></i>
+				<i>
+					<img id="img-project" src="/Astro-Portafolio/icons/folder-open.svg" class="img__icon--li" alt="">
+				</i>
 			</li>
 			<!-- <li class="header__li" id="li-skill">
 				<a href="#skill" class="header__a header__a--nav">Conocimientos</a>
@@ -45,7 +50,9 @@
 			</li> -->
 			<li class="header__li" id="li-education">
 				<a href="#education" class="header__a header__a--nav">Educación</a>
-				<i><img src="/Astro-Portafolio/icons/book.svg" class="img__icon--li" alt=""></i>
+				<i>
+					<img id="img-education" src="/Astro-Portafolio/icons/book.svg" class="img__icon--li" alt="">
+				</i>
 			<!-- </li>
 			<li class="header__li" id="li-contact">
 				<a href="#contact" class="header__a header__a--nav">Contacto</a>

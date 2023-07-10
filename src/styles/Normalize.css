@@ -26,6 +26,13 @@
     --color-sc-4: #324359;
     --color-sc-5: #1A1E26;
     
+    /* --color-sc-1: #3BCCED;
+    --color-sc-2: #515659;
+    --color-sc-3: #9C9CDD;
+    --color-sc-4: #321F60;
+    --color-sc-5: #201547; */
+
+
     /* backgrounds */
     --bg-color: var(--color-sc-5);
     --second-bg-color: var(--color-sc-4);

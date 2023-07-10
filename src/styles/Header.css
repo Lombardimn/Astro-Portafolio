@@ -60,6 +60,7 @@
 .header__li:hover,
 .header__li.active{
     color: var(--main-color);
+    filter: brightness(0) saturate(100%) invert(61%) sepia(65%) saturate(298%) hue-rotate(124deg) brightness(88%) contrast(90%);
 }
 
 .header__li a,
@@ -72,3 +73,8 @@
     height: 20px;
     width: 20px;
 }
+
+.img__icon--li.active path{
+    filter: brightness(0) saturate(100%) invert(61%) sepia(65%) saturate(298%) hue-rotate(124deg) brightness(88%) contrast(90%);
+}
+
