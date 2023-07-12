@@ -16,10 +16,6 @@ const navImg = document.querySelectorAll('header nav ul li i img');
         }
     });
 
-// **********
-// Armar nuevamente la logica para la seleccion activa del navbar
-// ***********
-
 window.onscroll = () => {
 		//Sticky header
 		const header = document.querySelector('header') as HTMLElement;
@@ -45,7 +41,6 @@ window.onscroll = () => {
 			});
         };
     });
-
 }
 </script>
 
@@ -56,36 +51,21 @@ window.onscroll = () => {
 		<ul class="header__ul" id="header__ul">
 			<li class="header__li active" id="li-home">
 				<a href="#home" class="header__a header__a--nav">Inicio</a>
-				<i>
-					<img
-						id="img-home"
-						src="/Astro-Portafolio/icons/house-user.svg"
-						class="img__icon--li active"
-						alt=""
-					/>
-				</i>
+				<svg class="img__icon--li active" id="img-home">
+					<use xlink:href="/Astro-Portafolio/icons/sprite.svg#house-user"></use>
+				</svg>
 			</li>
 			<li class="header__li" id="li-about">
 				<a href="#about" class="header__a header__a--nav">Sobre Mí</a>
-				<i>
-					<img
-						id="img-about"
-						src="/Astro-Portafolio/icons/user-circle.svg"
-						class="img__icon--li"
-						alt=""
-					/>
-				</i>
+				<svg class="img__icon--li active" id="img-about">
+					<use xlink:href="/Astro-Portafolio/icons/sprite.svg#user-circle"></use>
+				</svg>
 			</li>
 			<li class="header__li" id="li-project">
 				<a href="#project" class="header__a header__a--nav">Proyectos</a>
-				<i>
-					<img
-						id="img-project"
-						src="/Astro-Portafolio/icons/folder-open.svg"
-						class="img__icon--li"
-						alt=""
-					/>
-				</i>
+				<svg class="img__icon--li active" id="img-project">
+					<use xlink:href="/Astro-Portafolio/icons/sprite.svg#open-folder"></use>
+				</svg>
 			</li>
 			<!-- <li class="header__li" id="li-skill">
 				<a href="#skill" class="header__a header__a--nav">Conocimientos</a>
@@ -101,14 +81,9 @@ window.onscroll = () => {
 				<a href="#education" class="header__a header__a--nav"
 					>Educación</a
 				>
-				<i>
-					<img
-						id="img-education"
-						src="/Astro-Portafolio/icons/book.svg" 
-						class="img__icon--li" 
-						alt="" 
-					/>
-				</i>
+				<svg class="img__icon--li active" id="img-education">
+					<use xlink:href="/Astro-Portafolio/icons/sprite.svg#book"></use>
+				</svg>
 			<!-- </li>
 			<li class="header__li" id="li-contact">
 				<a href="#contact" class="header__a header__a--nav">Contacto</a>

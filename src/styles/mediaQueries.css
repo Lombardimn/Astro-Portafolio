@@ -39,7 +39,6 @@
     }
 
     .img__icon--li{
-        padding-left: .1rem;
         font-size: 1rem;
     }
     
@@ -75,7 +74,7 @@
     }
 
     .home__h2{
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin: 2rem 0;
     }
 
@@ -233,19 +232,19 @@
     }
 
     .home__h3 {
-        font-size: 1.82rem;
+        font-size: 1.5rem;
         width: 41rem;
     }
 
     .home__p{
         width: 50rem;
-        margin: 1rem 0;
+        margin: .5rem 0;
     }
 
     .home__div--img{
         display: block;
-        height: 22rem;
-        width: 22rem;
+        height: 28rem;
+        width: 28rem;
     }
 
     .btn__box {
@@ -296,4 +295,13 @@
     }
 }
 
-@media (min-width: 1280px){}
+/* @media (min-width: 1200px){
+    .home__h2{
+        font-size: 3rem;
+    }
+    
+    .home__p{
+        font-size: 1.5rem;
+        margin: .5rem 0;
+    }
+} */
