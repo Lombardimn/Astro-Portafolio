@@ -9,7 +9,7 @@
             Site: Desarrollo Web,">
 
         <title>Astro Porfolio</title>
-    <link rel="stylesheet" href="/Astro-Portafolio/_astro/index.a6bbf153.css" /><script type="module">const l=document.getElementById("menu__icon"),d=document.getElementById("header__nav"),m=document.querySelectorAll("section"),v=document.querySelectorAll("header nav li"),f=document.querySelectorAll("header nav ul li i img");l?.addEventListener("click",()=>{d?.classList.toggle("active"),d?.classList.contains("active")?l.src="/Astro-Portafolio/icons/x-mark.svg":l.src="/Astro-Portafolio/icons/list-fill.svg"});window.onscroll=()=>{document.querySelector("header").classList.toggle("sticky",window.scrollY>100),m.forEach(e=>{let t=window.scrollY,a=e.offsetTop-100,u=e.offsetHeight,r=e.getAttribute("id");t>=a&&t<a+u&&(v.forEach(o=>{o.classList.remove("active"),document.querySelector("header nav li[id*= li-"+r+"]")?.classList.add("active")}),f.forEach(o=>{o.classList.remove("active"),document.querySelector("header nav ul li i img[id*= img-"+r+"]")?.classList.add("active")}))})};const c=document.querySelector(".about__btn");let s=!1;const n=[];c?.addEventListener("click",()=>{const i=document.querySelectorAll(".about__p2");s=!s,i.forEach(e=>{(e.textContent?.trim()||"")!==""&&n.push(e)}),s?(n.forEach(e=>{e.style.display="block"}),c.textContent="Ver -"):(n.forEach(e=>{e.style.display="none"}),c.textContent="Ver +")});
+    <link rel="stylesheet" href="/Astro-Portafolio/_astro/index.638ec7bd.css" /><script type="module">const l=document.getElementById("menu__icon"),d=document.getElementById("header__nav"),m=document.querySelectorAll("section"),v=document.querySelectorAll("header nav li"),f=document.querySelectorAll("header nav ul li i img");l?.addEventListener("click",()=>{d?.classList.toggle("active"),d?.classList.contains("active")?l.src="/Astro-Portafolio/icons/x-mark.svg":l.src="/Astro-Portafolio/icons/list-fill.svg"});window.onscroll=()=>{document.querySelector("header").classList.toggle("sticky",window.scrollY>100),m.forEach(e=>{let t=window.scrollY,a=e.offsetTop-100,u=e.offsetHeight,r=e.getAttribute("id");t>=a&&t<a+u&&(v.forEach(o=>{o.classList.remove("active"),document.querySelector("header nav li[id*= li-"+r+"]")?.classList.add("active")}),f.forEach(o=>{o.classList.remove("active"),document.querySelector("header nav ul li i img[id*= img-"+r+"]")?.classList.add("active")}))})};const c=document.querySelector(".about__btn");let s=!1;const n=[];c?.addEventListener("click",()=>{const i=document.querySelectorAll(".about__p2");s=!s,i.forEach(e=>{(e.textContent?.trim()||"")!==""&&n.push(e)}),s?(n.forEach(e=>{e.style.display="block"}),c.textContent="Ver -"):(n.forEach(e=>{e.style.display="none"}),c.textContent="Ver +")});
 </script></head>
     <body>
         <main>
@@ -23,19 +23,19 @@
 			<li class="header__li active" id="li-home">
 				<a href="#home" class="header__a header__a--nav">Inicio</a>
 				<svg class="img__icon--li active" id="img-home">
-					<use xlink:href="/Astro-Portafolio/icons/sprite.svg#house-user"></use>
+					<use xlink:href="/Astro-Portafolio/icons/spriteHeader.svg#house-user"></use>
 				</svg>
 			</li>
 			<li class="header__li" id="li-about">
 				<a href="#about" class="header__a header__a--nav">Sobre Mí</a>
 				<svg class="img__icon--li active" id="img-about">
-					<use xlink:href="/Astro-Portafolio/icons/sprite.svg#user-circle"></use>
+					<use xlink:href="/Astro-Portafolio/icons/spriteHeader.svg#user-circle"></use>
 				</svg>
 			</li>
 			<li class="header__li" id="li-project">
 				<a href="#project" class="header__a header__a--nav">Proyectos</a>
 				<svg class="img__icon--li active" id="img-project">
-					<use xlink:href="/Astro-Portafolio/icons/sprite.svg#open-folder"></use>
+					<use xlink:href="/Astro-Portafolio/icons/spriteHeader.svg#open-folder"></use>
 				</svg>
 			</li>
 			<!-- <li class="header__li" id="li-skill">
@@ -51,7 +51,7 @@
 			<li class="header__li" id="li-education">
 				<a href="#education" class="header__a header__a--nav">Educación</a>
 				<svg class="img__icon--li active" id="img-education">
-					<use xlink:href="/Astro-Portafolio/icons/sprite.svg#book"></use>
+					<use xlink:href="/Astro-Portafolio/icons/spriteHeader.svg#book"></use>
 				</svg>
 			<!-- </li>
 			<li class="header__li" id="li-contact">
@@ -73,8 +73,8 @@
         <div class="home__div home__div--leng">
             <input type="checkbox" class="home__input home__input--leng" id="home__label">
             <label for="home__label" class="home__label--lbl">
-                <img src="/Astro-Portafolio/icons/us.webp" class="label__img label__img-us" alt="Bandera de Estados Unidos, para el idioma ingles." loading="lazy">
-                <img src="/Astro-Portafolio/icons/es.webp" class="label__img label__img-es" alt="Bandera de Estados Unidos, para el idioma ingles." loading="lazy">
+                <img src="/Astro-Portafolio/icons/es.webp" class="label__img label__img-us" alt="Bandera de Estados Unidos, para el idioma ingles." loading="lazy">
+                <img src="/Astro-Portafolio/icons/us.webp" class="label__img label__img-es" alt="Bandera de Estados Unidos, para el idioma ingles." loading="lazy">
             </label>
         </div>
     </article>
@@ -98,9 +98,21 @@
     </article>
 
     <article class="home__article home__article--rrss">
-            <a href="https://github.com/Lombardimn" class="home__a" id="a_gt" aria-label="Si desea puede ingresar a mi repositorio en Git-Hub." target="_blank"><img src="/Astro-Portafolio/icons/github-loop.svg" alt="" loading="lazy" class="home__i"></a>
-            <a href="mailto:example.test@example.com" class="home__a a__mail" id="a_mail" aria-label="Si desea puede contactarme mediante mi correo electronico." target="_blank"><img src="/Astro-Portafolio/icons/gmail.svg" alt="" loading="lazy" class="home__i"></a>
-            <a href="https://linkedin.com/in/mnlombardi" class="home__a a__in" id="a_in" aria-label="Si desea puede ingresar a mi perfil en Linkedin." target="_blank"><img src="/Astro-Portafolio/icons/linkedin.svg" alt="" loading="lazy" class="home__i"></a>
+            <a href="https://github.com/Lombardimn" class="home__a" id="a_gt" aria-label="Si desea puede ingresar a mi repositorio en Git-Hub." target="_blank">
+                <svg class="home__i">
+					<use xlink:href="/Astro-Portafolio/icons/spriteSocial.svg#github-loop"></use>
+				</svg>
+            </a>
+            <a href="mailto:example.test@example.com" class="home__a a__mail" id="a_mail" aria-label="Si desea puede contactarme mediante mi correo electronico." target="_blank">
+                <svg class="home__i">
+					<use xlink:href="/Astro-Portafolio/icons/spriteSocial.svg#gmail"></use>
+				</svg>
+            </a>
+            <a href="https://linkedin.com/in/mnlombardi" class="home__a a__in" id="a_in" aria-label="Si desea puede ingresar a mi perfil en Linkedin." target="_blank">
+                <svg class="home__i">
+					<use xlink:href="/Astro-Portafolio/icons/spriteSocial.svg#linkedIn"></use>
+				</svg>
+            </a>
     </article>
 </section>
             

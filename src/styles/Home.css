@@ -125,7 +125,6 @@
 .home__div--txt{
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
 }
 
 .home__div--img{
@@ -180,61 +179,26 @@
 }
 
 .global__btn{
-    letter-spacing: .1rem;
-    position: relative;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 9.4rem;
-    height: 100%;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
     background-color: var(--main-color);
-    border: 0.15rem solid var(--main-color);
-    border-radius: 0.8rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--bg-color);
+    box-shadow: 0 4px 0 #324359;
+    outline: none;
     cursor: pointer;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
+    border: none;
+    font-size: 24px;
+    color: var(--bg-color);
+    transition: all 0.3s ease-in-out;
 }
 
 .global__btn:hover{
-    color: var(--main-color);
+    transform: translateY(6px);
+    box-shadow: none;
 }
 
-/* Se retiro el boton secundario por lo que solo afecta a las tarjetas, como redireccionan no es necesario mostrar efectos.
-
-/* .global__btn:nth-child(2){
-    background-color: transparent;
-    color: var(--main-color);
-} */
-
-.global__btn:nth-child(2):hover{
-    color: var(--bg-color);
-}
-
-.global__btn:nth-child(2)::before{
-    content: '';
-    background-color: var(--main-color);
-}
-
-.global__btn::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--bg-color);
-    z-index: -1;
-    transition: .5s;
-}
-
-.global__btn:hover:before{
-    content: '';
-    width: 100%;
+.global__btn:active{
+    opacity: 0.5;
 }
 
 #home__lt{
@@ -264,8 +228,8 @@
 }
 
 .home__a:hover{
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    animation: heartbeat 1.5s ease-in-out infinite both;
+    /* -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both; */
 }
 
 .home__i{

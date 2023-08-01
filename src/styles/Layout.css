@@ -28,7 +28,7 @@ body::-webkit-scrollbar-track-piece:decrement{
     border: solid 4px transparent;
 }
 
-body::-webkit-scrollbar-button:vertical:start:decrement{
+/* body::-webkit-scrollbar-button:vertical:start:decrement{
     background: transparent url(../../img/icons/chevrons-up-solid-24.png) no-repeat center center;
     background-size: 1rem;
 }
@@ -36,7 +36,7 @@ body::-webkit-scrollbar-button:vertical:start:decrement{
 body::-webkit-scrollbar-button:vertical:end:increment{
     background: transparent url(../../img/icons/chevrons-down-solid-24.png) no-repeat center center;
     background-size: 1rem;
-}
+} */
 
 .main{
     position: absolute;
