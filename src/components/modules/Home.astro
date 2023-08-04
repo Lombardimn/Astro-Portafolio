@@ -1,17 +1,34 @@
 ---
-import dataHome from '../../config/dataHome.json'
+import dataHome from '../../config/dataHome.json';
+import CardSocial from '../cardSocial.astro';
+import SelectLang from '../selectLang.astro';
+import ButtonModel from '../buttonModel.astro';
 ---
+<script>
+    //Obtener todas las etiquetas <a> que contienen los SVG
+    const buttonModel = document.querySelectorAll('.home__a');
+
+    //Agregar un evento de mouseover para aplicar la clase "active" en el hover
+    buttonModel.forEach(link => {
+        const svg = link.querySelector('svg');
+
+        if (svg){
+            link.addEventListener('mouseover', () => {
+                svg.classList.add('active');
+            });
+
+            // Agregar un evento de mouseout para eliminar la clase "active" al salir del hover
+            link.addEventListener('mouseout', () => {
+                svg.classList.remove('active');
+            });
+        }
+    });
+</script>
+
 
 <section class="home__section active" id="home">
     <article class="home__article home__article--leng">
-        <p class="home__leng-h6">Idiomas</p>
-        <div class="home__div home__div--leng">
-            <input type="checkbox" class="home__input home__input--leng" id="home__label">
-            <label for="home__label" class="home__label--lbl">
-                <img src="/Astro-Portafolio/icons/es.webp" class="label__img label__img-us" alt="Bandera de Estados Unidos, para el idioma ingles." loading="lazy"></img>
-                <img src="/Astro-Portafolio/icons/us.webp" class="label__img label__img-es" alt="Bandera de Estados Unidos, para el idioma ingles." loading="lazy"></img>
-            </label>
-        </div>
+        <SelectLang/>
     </article>
 
     {
@@ -32,25 +49,11 @@ import dataHome from '../../config/dataHome.json'
     }
 
     <article class="home__article global__btn--box btn__box">
-        <button class="home__dcv global__btn" id="home__dcv">Descargar CV</button>
-        <button class="home__lt global__btn" id="home__lt">Hablemos</button>
+        <ButtonModel class="home__dcv global__btn" id="home__dcv" label="Descargar CV"/>
+        <ButtonModel class="home__lt global__btn" id="home__lt" label="Hablemos"/>
     </article>
 
     <article class="home__article home__article--rrss">
-            <a href="https://github.com/Lombardimn" class="home__a" id="a_gt" aria-label="Si desea puede ingresar a mi repositorio en Git-Hub." target="_blank">
-                <svg class="home__i">
-					<use xlink:href="/Astro-Portafolio/icons/spriteSocial.svg#github-loop"></use>
-				</svg>
-            </a>
-            <a href="mailto:example.test@example.com" class="home__a a__mail" id="a_mail" aria-label="Si desea puede contactarme mediante mi correo electronico." target="_blank">
-                <svg class="home__i">
-					<use xlink:href="/Astro-Portafolio/icons/spriteSocial.svg#gmail"></use>
-				</svg>
-            </a>
-            <a href="https://linkedin.com/in/mnlombardi" class="home__a a__in" id="a_in" aria-label="Si desea puede ingresar a mi perfil en Linkedin." target="_blank">
-                <svg class="home__i">
-					<use xlink:href="/Astro-Portafolio/icons/spriteSocial.svg#linkedIn"></use>
-				</svg>
-            </a>
+        <CardSocial/>
     </article>
 </section>

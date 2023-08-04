@@ -1,0 +1,20 @@
+[
+    {
+        "id-element": "a_gt",
+        "href": "https://github.com/Lombardimn",
+        "aria-label": "Si desea puede ingresar a mi repositorio en Git-Hub.",
+        "xlink:href": "/Astro-Portafolio/icons/spriteSocial.svg#github-loop"
+    },
+    {
+        "id-element": "a_mail",
+        "href": "mailto:example.test@example.com",
+        "aria-label": "Si desea puede contactarme mediante mi correo electronico.",
+        "xlink:href": "/Astro-Portafolio/icons/spriteSocial.svg#gmail"
+    },
+    {
+        "id-element": "a_in",
+        "href": "https://linkedin.com/in/mnlombardi",
+        "aria-label": "Si desea puede ingresar a mi perfil en Linkedin.",
+        "xlink:href": "/Astro-Portafolio/icons/spriteSocial.svg#linkedIn"
+    }
+]

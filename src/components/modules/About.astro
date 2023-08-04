@@ -1,36 +1,27 @@
 ---
 import feactures from "../../config/feactures.json";
+import ButtonModel from "../buttonModel.astro";
+import CardAbout from "../cardAbout.astro";
 ---
 <script>
 
-    const moreBtn = document.querySelector('.about__btn') as HTMLButtonElement;
-    let flagBtn = false;
-    const paragraphs: HTMLElement[] = [];
+const moreBtn = document.querySelector('.about__btn') as HTMLButtonElement;
+const contentAboutHide = document.getElementById('content__about-hide') as HTMLDivElement;
 
-    moreBtn?.addEventListener('click', ()=> {
-        const elements = document.querySelectorAll('.about__p2') as NodeListOf<HTMLElement>;      
-        flagBtn = !flagBtn;
+let isContentVisible = false;
 
-        elements.forEach((element) => {
-            const value = element.textContent?.trim() || '';
-            if (value !== '') {
-                paragraphs.push(element);
-            }
-        });
+function toggleContent() {
+    if (isContentVisible) {
+        contentAboutHide.style.display = 'none';
+        moreBtn.textContent = 'Ver +';
+    } else {
+        contentAboutHide.style.display = 'flex';
+        moreBtn.textContent = 'Ver -';
+    }
+    isContentVisible = !isContentVisible;
+}
 
-        if (flagBtn){
-            paragraphs.forEach((paragraph) => {
-                paragraph.style.display = 'block';
-            });
-            moreBtn.textContent = 'Ver -';
-        } else{
-            paragraphs.forEach((paragraph) => {
-                paragraph.style.display = 'none';
-            });
-            moreBtn.textContent = 'Ver +';
-        }
-    });
-
+moreBtn.addEventListener('click', toggleContent);
 </script>
 
 
@@ -43,22 +34,47 @@ import feactures from "../../config/feactures.json";
         </div>
     </article>
 
-    {
-        feactures.map(feacture =>(
-            
-            <article class="about__article">
-                <h3 class="about__h3">{feacture.title}</h3> 
-                <p class="about__p">{feacture.description}</p>
-                {feacture.descComp !== "" ? <p class="about__pp2">{feacture.descComp}</p> : null}
-                {feacture.descComp2 !== "" ? <p class="about__p2" id="about__pc1">{feacture.descComp2}</p> : null}
-                {feacture.descComp3 !== "" ? <p class="about__p2" id="about__pc2">{feacture.descComp3}</p> : null}
-                {feacture.descComp4 !== "" ? <p class="about__p2" id="about__pc3">{feacture.descComp4}</p> : null}
-            </article>
+    <h3 class="about__h3">Mi objetivo</h3>
+    <CardAbout  
+        class="about__p" 
+        label="Busco brindar soluciones tecnológicas eficientes, destacando en la comunicación efectiva y la resolución de problemas complejos. Valorando el trabajo en equipo, busco contribuir al crecimiento de las organizaciones en un entorno tecnológico en constante evolución."
+    />
 
-        ))
-    }
+    <h3 class="about__h3">"¿Quíen soy?"</h3>
+    <div class="content__about">
+        <article class="about__article-card">
+            <CardAbout 
+                class="about__p"
+                label="Residente de la hermosa ciudad de Córdoba, Argentina. Como padre de dos maravillosos niños, mi familia es mi mayor inspiración y mi motor para crecer cada día. Además de ser un apasionado analista de sistemas en mi trabajo, tengo una faceta muy activa en mi vida."
+            />
 
+            <CardAbout 
+                class="about__p"
+                label="Me encanta sumergirme en actividades deportivas, especialmente en simulaciones militares, donde puedo poner a prueba mi estrategia y habilidades tácticas. En mis momentos de relax, me sumerjo en el fascinante mundo de los mangas y disfruto de momentos de calidad con mi familia y amigos."
+            />
+        </article>
+            <div class="about_div--img">
+                <img src="/Astro-Portafolio/screenshot/descarga.jfif" class="about__img-p" alt="">
+            </div>
+    </div>
+
+    <div class="content__about" id="content__about-hide">
+        <div class="about_div--img">
+            <img src="/Astro-Portafolio/screenshot/descarga.jfif" class="about__img-p" alt="">
+        </div>
+        <article class="about__article-card">
+            <CardAbout 
+                class="about__p"
+                label="También disfruto salir a comer y descubrir nuevos sabores y experiencias culinarias. Viajar es otra de mis grandes pasiones. Me encanta explorar cada rincón de Argentina y disfrutar de sus paisajes impresionantes. Los fines de semana, aprovecho la diversidad de paisajes que ofrece Córdoba para desconectar y relajarme junto a mi familia. "
+            />
+
+            <CardAbout 
+                class="about__p"
+                label="Mi día a día está lleno de programación y desarrollo de soluciones tecnológicas. Me encanta sumergirme en nuevos proyectos y encontrar soluciones innovadoras para los desafíos que se presentan y no puedo olvidar mencionar que siempre estoy acompañado de mi inseparable mate o un buen café, que me inspiran y me mantienen enfocado en cada tarea que emprendo."
+            />
+        </article>
+    </div>
     <article class="about__article global__btn--box">
-        <button class="about__btn global__btn">Ver +</button>
+        <ButtonModel class="about__btn global__btn" label="Ver +"/>
     </article>
 </section>

@@ -220,21 +220,30 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    border: .15rem solid var(--main-color);
+    border: 1px solid var(--main-color);
     border-radius: 50%;
     color: var(--main-color);
     font-size: 1.5rem;
     width: 3rem;
     height: 3rem;
     margin: 1rem;
+    box-shadow: 0 4px 0 var(--main-color);
+    cursor: pointer;
 }
 
 .home__a:hover{
-    /* -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    animation: heartbeat 1.5s ease-in-out infinite both; */
+    transform: translateY(6px);
+    box-shadow: none;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    transition: all 0.3s ease-in-out;
 }
 
 .home__i{
     width: 2rem;
     height: 2rem;
+}
+
+.home__i.active {
+    filter: brightness(0) saturate(100%) invert(6%) sepia(5%) saturate(4965%) hue-rotate(182deg) brightness(94%) contrast(86%);
 }

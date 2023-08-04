@@ -1,0 +1,34 @@
+---
+import feactures from '../config/feactures.json';
+
+const {
+    label,
+    url,
+    alt,
+    class:list
+} = Astro.props
+---
+
+<article class="about__article">
+    <div>
+        <p class={list}>{label}</p>
+    </div>
+    <div class=content__div>
+        <img src={url} alt={alt}>
+    </div>
+</article>
+
+
+
+<!-- {
+    feactures.map(feacture =>(
+        <article class="about__article">
+            <h3 class="about__h3">{feacture.title}</h3> 
+            <p class="about__p">{feacture.description}</p>
+            {feacture.descComp !== "" ? <p class="about__pp2">{feacture.descComp}</p> : null}
+            {feacture.descComp2 !== "" ? <p class="about__p2" id="about__pc1">{feacture.descComp2}</p> : null}
+            {feacture.descComp3 !== "" ? <p class="about__p2" id="about__pc2">{feacture.descComp3}</p> : null}
+            {feacture.descComp4 !== "" ? <p class="about__p2" id="about__pc3">{feacture.descComp4}</p> : null}
+        </article>
+    ))
+} -->

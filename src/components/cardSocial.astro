@@ -1,0 +1,13 @@
+---
+import rrss from '../config/rrss.json';
+---
+
+{
+    rrss.map(social =>(
+        <a href={social['href']} class="home__a" id={social['id-element']} aria-label={social['aria-label']} target="_blank">
+            <svg class="home__i">
+                <use xlink:href={social['xlink:href']}></use>
+            </svg>
+        </a>
+    ))
+}

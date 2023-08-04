@@ -237,17 +237,18 @@
     }
 
     .home__div--h3{
-        width: 41rem;
+        width: 34rem;
     }
 
     .home__h3 {
         font-size: 1.5rem;
-        width: 41rem;
+        width: 34rem;
     }
 
     .home__p{
         width: 50rem;
         margin: .5rem 0;
+        opacity: 0.8;
     }
 
     .home__div--img{
@@ -277,7 +278,7 @@
         0%,
         10%,
         100% {
-            background-position: -41rem 0;
+            background-position: -34rem 0;
         }
         65%,
         85% {
@@ -294,7 +295,7 @@
         65%,
         78%,
         85% {
-            width: 41rem;
+            width: 33.7rem;
             opacity: 1;
         }
         75%,
